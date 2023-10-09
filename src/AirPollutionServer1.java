@@ -1,4 +1,6 @@
-public class AirPollutionServer1 implements Runnable {
+import java.util.Observable;
+
+public class AirPollutionServer1 extends Observable implements Runnable {
     private int pollution = 50;
     private boolean stop = false;
     private int sleepDuration;
