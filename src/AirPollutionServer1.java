@@ -27,7 +27,6 @@ public class AirPollutionServer1 extends Observable implements Runnable {
             System.out.printf("Server: pollution = %d\n", pollution);
             notifyObservers();
 
-            clearChanged();
             try {
                 Thread.sleep(sleepDuration); // sleepDuration밀리초 멈춤
             }
